@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+    padding: 20px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-btn{
+     font-size: 20px;
+     font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+}
+.cart button{
+    font-size: 22px;
+     font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 4px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+}
+.cart button:hover{
+    background-color: #cdcccc;
+}
+.nav-btn:hover{
+     background-color: #939292;
+}
+.center{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.center .left{
+    width: 50%;
+    height: 100vh;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   justify-content: center;
+   padding: 15px 20px;
+  
+}
+.center .left .image{
+  width:100%;
+    border: none;
+    overflow: hidden;
+
+}
+.center .left .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.center .left .small-images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 12px;
+ 
+}
+.small-images .img-con{
+    width: 120px;
+    height: 120px;
+}
+.small-images .img-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.center .right{
+     width: 50%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.right .heading h3{
+   font-size: 40px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+      
+}
+.right .para h5{
+     font-size: 20px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+}
+.right .para p{
+     font-size: 14px;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+     
+}
+.right .price h4{
+font-size: 40px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+}
+.right .size h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 5px;
+}
+.right .size .md{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px   ;
+}
+.right .size .md .ru{
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.right .size .md .ru:hover{
+    background-color: #111;
+    color: #fff;
+}
+.right .review h4{
+     font-size: 25px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+}
+.right .review p{
+     font-size: 12px;
+     margin-top: 4px;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+ .right .btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+ }
+ .btn button{
+    border: none;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 10px;
+   font-family: "Fira Sans", sans-serif;
+   text-transform: capitalize;
+   cursor: pointer;
+ }
+ .btn .btn-2{
+    background: transparent;
+    color: #111;
+    border: 2px solid black;
+ }
+.btn button:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width:700px) {
+.center{
+    flex-direction: column;
+}    
+.center .left,.center .right{
+width: 100%;
+}
+.right .btn{
+    flex-direction: column;
+}
+.right .btn button{
+    width: 100%;
+}
+}

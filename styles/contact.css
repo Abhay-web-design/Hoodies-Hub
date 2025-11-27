@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      background-color: #cacaca;
+}
+.nav{
+    width: 100%;
+    padding: 20px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.nav-btn{
+     font-size: 20px;
+     font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+}
+.nav-btn:hover{
+     background-color: #939292;
+}
+h2{
+     font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Fira Sans", sans-serif;
+}
+.cent-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.center{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+   
+}
+.center h3{
+       font-size: 25px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+}
+.center p{
+       font-size: 15px;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    color: #cacaca;
+
+}
+form{
+    margin-top: 10px;
+    padding: 20px;
+}
+label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 5px;
+}
+input{
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    width: 60%;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+     font-family: "Fira Sans", sans-serif;
+     margin-left: 7px;
+     margin-bottom: 24px;
+}
+input:focus{
+    outline: none;
+}
+#msg{
+   padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    width: 85%;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+     font-family: "Fira Sans", sans-serif;
+     margin-left: 7px;  
+     resize: none;
+}
+#msg:focus{
+    outline: none;
+}
+.btn{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.btn button{
+    border-radius: 25px;
+    padding: 8px 24px 8px 24px;
+    background-color: #fff;
+    color:#111;
+    font-size: 18px;
+      font-weight: 500;
+     font-family: "Fira Sans", sans-serif;
+     border: none;
+
+}
+.btn button:hover{
+  cursor: pointer;
+    scale: 1.1;
+}
+
+.contact{
+    background-color: #111;
+    padding: 24px;
+    color: #fff;
+    border-radius: 24px;
+}
+.contact h4{
+  font-size: 16px;
+    font-weight: 500;
+     font-family: "Fira Sans", sans-serif;
+}
+.list{
+    background-color: #f5f3f3b8;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 14px;
+    font-size: 18px;
+       font-weight: 500;
+     font-family: "Fira Sans", sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 12px;
+     color: #111;
+
+}
+i{
+    font-size:22px ;
+}
+hr{
+    margin-top:14px;
+    margin-bottom: 14px;
+}
+ul{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+@media  screen and (max-width:700px) {
+    input{
+        width: 100%;
+    }
+    #msg{
+        width: 100%;
+    }
+    .cent-main{
+        flex-direction: column;
+    }
+    .contact{
+        margin-top: 24px;
+    }
+}

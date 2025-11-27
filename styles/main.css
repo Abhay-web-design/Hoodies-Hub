@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+
+}
+/* +++++++++++++++++++++++++++++ navbar ++++++++++++++++++++++ */
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+}
+.logo{
+    width: 25%;
+    padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo h1{
+   color: #111;
+   font-size: 25px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.logo span{
+    font-style:oblique;
+}
+.menubar{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.category{
+   padding: 5px;
+  
+}
+.category ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.category ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+     font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform:uppercase;
+        cursor: pointer;
+}
+.category ul li a:hover{
+    color: #939292;
+
+}
+.cart button{
+    font-size: 22px;
+     font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 4px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+}
+.cart button:hover{
+    background-color: #cdcccc;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++ hero +++++++++++++++++++++++++ */
+.hero{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section{
+    width: 80%;
+    height:80%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.hero-section img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+
+}
+.hero-text{
+    position: absolute;
+    bottom: 2%;
+    padding: 30px;
+}
+.hero-text h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+}
+.hero-text p{
+      color: #939292;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 5px;
+}
+.hero-text p span{
+         color: #939292;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.hero-text button{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 8px 12px 28px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+.hero-text button .ri-arrow-right-line{
+    color: #fff;
+    background-color: #111;
+     border: none;
+    border-radius: 25px;
+    padding: 5px 5px;
+    font-size:22px;
+    margin-left: 15px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ section-2 ++++++++++++++++++++ */
+.section-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.res{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.new-drops{
+    margin-top: 14px;
+}
+.new-drops h2{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.new-drops p{
+    width: 45vw;
+    color: #939292;
+        font-size: 19px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 8px;
+    line-height: 28px;
+}
+.bot button{
+  font-size: 18px;
+    font-weight: 300;
+    padding: 12px 8px 12px 28px;
+    border: none;
+    border-radius: 25px;
+}
+.bot button .ri-arrow-right-line{
+    color: #fff;
+    background-color: #111;
+     border: none;
+    border-radius: 25px;
+    padding: 5px 5px;
+    font-size:22px;
+    margin-left: 15px;
+}
+.cards{
+    margin-top: 10px;
+    display: grid;
+     gap: 15px;
+     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    width: 100%;
+    padding: 24px;
+}
+.card{
+    padding: 10px;
+}
+.image-container{
+   width: 100%;
+   height: 550px;
+   border-radius: 18px;
+   overflow: hidden;
+   position: relative;
+}
+.image-container img{
+     width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.image-container h3{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+}
+.hoodies-detail h3{
+    margin-top: 15px;
+   font-size: 35px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.hoodies-detail p {
+    color: #939292;
+        font-size: 15px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.hoodies-detail h4{
+      font-size: 20px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 15px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++ section-3 +++++++++++++++++++++++++++++=== */
+.section-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+.text{
+    margin-top: 50px;
+}
+.text h2{
+    margin-top: 15px;
+    font-size: 55px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.text p{
+    color: #939292;
+        font-size: 18px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.box{
+    width: 100%;
+}
+.container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+.img-box{
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.det-box{
+    height: 450px ;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+.det-box h2{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff ;
+}
+.det-box p{
+    color: #939292;
+        font-size: 15px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 5px;
+    line-height: 25px;
+}
+.det-box button{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 12px 8px 12px 28px;
+    border: none;
+    border-radius: 25px;
+}
+.det-box button i{
+      color: #fff;
+    background-color: #111;
+     border: none;
+    border-radius: 25px;
+    padding: 5px 5px;
+    font-size:22px;
+
+}
+.box2{
+    background-color: #e0dfdf;
+}
+.box2 h2{
+    color: #111;
+}
+.box2 button{
+    background-color: #111;
+    color: white;
+}
+.box2 button i{
+    background-color: white;
+    color: #111;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ section-4 +++++++++++++++++++++++++++++++ */
+.section-4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.shop-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+}
+.shop-detail h2{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+.shop-detail p{
+    color: #939292;
+        font-size: 18px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.statements{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+.statement-card{
+    margin-top: 15px;
+      padding: 5px;
+}
+.statement-card h3{
+    margin-top: 18px;
+  font-size: 25px;
+  font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.statement-card p{
+     color: #939292;
+        font-size: 15px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 5px;
+    line-height: 15px;
+}
+
+.statement-card i{
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 25px;
+    border: 1px solid #939292;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ section-5 ++++++++++++++++++++++++++++++++++++++++ */
+
+.section-5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 35px;
+    overflow-x: hidden;
+}
+.cat-box{
+    width: 100%;
+    height: 700px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.cat-box img{
+       width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cat-box h4{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff ;
+}
+hr{
+    margin-left: 5vw;
+    width: 90vw;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ footer +++++++++++++++++++++++++++++++ */
+.footer{
+    width: 100%;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.logo-name{
+        padding: 25px;
+}
+.logo-name h2{
+    font-size: 35px;
+  font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.logo-name p{
+     color: #939292;
+     width: 35vw;
+        font-size: 15px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 15px;
+    line-height: 25px;
+}
+#head{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.footer-list{
+    padding: 35px;
+}
+.footer-list h3{
+     font-size: 20px;
+  font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+}
+.footer-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.footer-list li{
+       color: #939292;
+        font-size: 18px;
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 25px;
+}
+.footer-list a{
+    text-decoration: none;
+    color:#939292 ;
+    cursor: pointer;
+}
+.footer-logo{
+    width: 100%;
+    background-color: #191919;
+    padding: 24px;
+}
+.footer-logo h4{
+    font-size: 150px;
+  font-weight: 700;
+  text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    color: #111;
+}
+@media screen and (max-width:400px){
+.logo h1{
+        font-size: 15px;
+    }
+    .footer-logo h4{
+        font-size: 25px;  
+      }
+}
+
+@media screen and (max-width:700px) {
+    
+    .category{
+        display: none;
+    }
+    .hero-text h2{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
+    .hero-text p span{
+        font-size: 15px;
+    }
+    .new-drops h2{
+        font-size: 35px;
+    }
+    .new-drops p{
+        font-size: 15px;
+    }
+    .text h2{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .container ,.section-4 ,.section-5, .footer{
+        flex-direction: column;
+    }
+    .footer-logo h4{
+        font-size: 80px;
+    }
+}
