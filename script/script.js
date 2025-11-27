@@ -149,6 +149,27 @@ gsap.from(".li",{
         return data.categories ;
     }
 
+let ham = document.querySelector(".hamburger");
+let drawer = document.querySelector(".mobile-menu");
+let overlay = document.querySelector(".overlay");
+
+ham.addEventListener("click", () => {
+    drawer.classList.add("active");
+    overlay.classList.add("active");
+    gsap.from(".yoyo",{
+      x:540,
+    duration:0.13,
+    stagger:0.2,
+    opacity:0
+    })
+});
+
+overlay.addEventListener("click", () => {
+    drawer.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+
 
 let cart = document.querySelector(".cart");
 cart.addEventListener("click",function(){

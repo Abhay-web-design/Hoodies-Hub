@@ -71,6 +71,23 @@ html,body{
     color: #939292;
 
 }
+
+.category.active {
+    display: block !important;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.category.active ul {
+    flex-direction: column;
+    gap: 20px;
+}
+
 .cart button{
     font-size: 22px;
      font-family: "Fira Sans", sans-serif;
@@ -85,8 +102,74 @@ html,body{
 .cart button:hover{
     background-color: #cdcccc;
 }
+
+.hamburger {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+        font-weight: 500;
+        font-style: normal;
+        padding: 4px 15px;
+        border-radius: 5px;
+        border: none;
+}
+.hamburger:hover{
+    background-color: #cdcccc;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    z-index: 9999;
+    padding: 30px 20px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-menu ul li a {
+    font-size: 32px;
+    margin-top: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++ hero +++++++++++++++++++++++++ */
 .hero{
+    position: relative;
     width: 100%;
     height: 89%;
     display: flex;
@@ -543,9 +626,6 @@ hr{
 
 @media screen and (max-width:700px) {
     
-    .category{
-        display: none;
-    }
     .hero-text h2{
         margin-top: 25px;
         font-size: 30px;
@@ -574,4 +654,16 @@ hr{
     .footer-logo h4{
         font-size: 80px;
     }
+    .hamburger {
+    display: block;
+}
+
+.menubar {
+    gap: 20px;
+}
+
+.category {
+    display: none;
+}
+
 }
