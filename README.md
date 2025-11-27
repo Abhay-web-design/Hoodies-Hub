@@ -36,7 +36,7 @@ HOODIES/
 ## Clone the repository
 
 ```
-git clone 
+git clone https://github.com/Abhay-web-design/Hoodies-Hub
 ```
 
 ---
